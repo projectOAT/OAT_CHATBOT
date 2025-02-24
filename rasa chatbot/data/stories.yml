@@ -1,0 +1,16 @@
+version: "3.1"
+
+stories:
+- story: User asks for highest mark
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_highest_mark
+  - action: action_fetch_highest_mark
+
+- story: User asks for student marks
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_student_marks
+  - action: action_fetch_student_marks
